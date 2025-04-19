@@ -1,0 +1,84 @@
+{
+  "name": "@ant-design/web3",
+  "version": "1.23.0",
+  "type": "module",
+  "main": "dist/esm/index.js",
+  "module": "dist/esm/index.js",
+  "typings": "dist/esm/index.d.ts",
+  "exports": {
+    "import": "./dist/esm/index.js",
+    "require": "./dist/lib/index.js",
+    "types": "./dist/esm/index.d.ts"
+  },
+  "sideEffects": false,
+  "files": [
+    "dist",
+    "CHANGELOG.md",
+    "README.md"
+  ],
+  "keywords": [
+    "ant",
+    "design",
+    "web3",
+    "antd",
+    "component",
+    "components",
+    "framework",
+    "frontend",
+    "react",
+    "react-component",
+    "ui"
+  ],
+  "homepage": "https://web3.ant.design",
+  "bugs": {
+    "url": "https://github.com/ant-design/ant-design-web3/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ant-design/ant-design-web3"
+  },
+  "scripts": {
+    "dev": "father dev",
+    "build": "father build"
+  },
+  "dependencies": {
+    "@ant-design/cssinjs": "^1.21.1",
+    "@ant-design/icons": "^5.5.1",
+    "@ant-design/web3-assets": "workspace:*",
+    "@ant-design/web3-common": "workspace:*",
+    "@ant-design/web3-icons": "workspace:*",
+    "@ctrl/tinycolor": "^4.1.0",
+    "@inline-svg-unique-id/react": "^1.2.3",
+    "antd": "^5.22.7",
+    "bs58": "^6.0.0",
+    "classnames": "^2.5.1",
+    "copy-to-clipboard": "^3.3.3",
+    "decimal.js": "^10.4.3",
+    "is-mobile": "^5.0.0",
+    "lodash-es": "^4.17.21"
+  },
+  "devDependencies": {
+    "@ant-design/web3-bitcoin": "workspace:*",
+    "@ant-design/web3-eth-web3js": "workspace:*",
+    "@ant-design/web3-ethers": "workspace:*",
+    "@ant-design/web3-solana": "workspace:*",
+    "@ant-design/web3-sui": "workspace:*",
+    "@ant-design/web3-ton": "workspace:*",
+    "@ant-design/web3-tron": "workspace:*",
+    "@ant-design/web3-wagmi": "workspace:*",
+    "@types/lodash-es": "^4.17.12",
+    "@types/react": "^18.3.5",
+    "@types/react-dom": "^18.3.1",
+    "father": "^4.4.4",
+    "typescript": "^5.6.2"
+  },
+  "peerDependencies": {
+    "antd": ">=5.0.0",
+    "react": ">=17.0.0",
+    "react-dom": ">=17.0.0"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org",
+    "access": "public"
+  }
+}

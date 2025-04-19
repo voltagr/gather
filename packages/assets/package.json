@@ -1,0 +1,102 @@
+{
+  "name": "@ant-design/web3-assets",
+  "version": "1.12.1",
+  "type": "module",
+  "main": "dist/esm/index.js",
+  "module": "dist/esm/index.js",
+  "typings": "dist/esm/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/esm/index.js",
+      "require": "./dist/lib/index.js",
+      "types": "./dist/esm/index.d.ts"
+    },
+    "./ethereum": {
+      "import": "./dist/esm/chains/ethereum.js",
+      "require": "./dist/lib/chains/ethereum.js",
+      "types": "./dist/esm/chains/ethereum.d.ts"
+    },
+    "./solana": {
+      "import": "./dist/esm/solana/index.js",
+      "require": "./dist/lib/solana/index.js",
+      "types": "./dist/esm/solana/index.d.ts"
+    },
+    "./wallets": {
+      "import": "./dist/esm/wallets/index.js",
+      "require": "./dist/lib/wallets/index.js",
+      "types": "./dist/esm/wallets/index.d.ts"
+    },
+    "./tokens": {
+      "import": "./dist/esm/tokens/index.js",
+      "require": "./dist/lib/tokens/index.js",
+      "types": "./dist/esm/tokens/index.d.ts"
+    }
+  },
+  "sideEffects": false,
+  "typesVersions": {
+    "*": {
+      "solana": [
+        "./dist/esm/solana/index.d.ts"
+      ],
+      "*": [
+        "./dist/esm/index.d.ts"
+      ]
+    }
+  },
+  "files": [
+    "dist",
+    "CHANGELOG.md",
+    "README.md"
+  ],
+  "keywords": [
+    "ant",
+    "design",
+    "web3",
+    "antd",
+    "component",
+    "components",
+    "framework",
+    "frontend",
+    "react",
+    "react-component",
+    "ui"
+  ],
+  "homepage": "https://web3.ant.design",
+  "bugs": {
+    "url": "https://github.com/ant-design/ant-design-web3/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ant-design/ant-design-web3"
+  },
+  "scripts": {
+    "dev": "father dev",
+    "build": "father build"
+  },
+  "dependencies": {
+    "@ant-design/web3-common": "workspace:*",
+    "@ant-design/web3-icons": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.5",
+    "@types/react-dom": "^18.3.1",
+    "father": "^4.4.4",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "typescript": "^5.6.2"
+  },
+  "peerDependencies": {
+    "react": ">=17.0.0",
+    "react-dom": ">=17.0.0"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org",
+    "access": "public"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "Firefox ESR",
+    "> 1%",
+    "ie >= 11"
+  ]
+}

@@ -1,0 +1,77 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`web3-config-provider > Should work 1`] = `
+<body>
+  <div>
+    <button
+      class="ant-btn css-dev-only-do-not-override-161f05s ant-btn-default ant-btn-color-default ant-btn-variant-outlined ant-web3-connect-button css-dev-only-do-not-override-161f05s"
+      type="button"
+    >
+      <div
+        class="ant-web3-connect-button-content"
+      >
+        <div
+          class="ant-web3-connect-button-content-inner"
+        >
+          <div
+            class="ant-web3-connect-button-text"
+          >
+            Connect Wallet
+          </div>
+        </div>
+      </div>
+    </button>
+  </div>
+</body>
+`;
+
+exports[`web3-config-provider > useAccount 1`] = `
+<body>
+  <div>
+    <div />
+  </div>
+</body>
+`;
+
+exports[`web3-config-provider > useNFT 1`] = `
+<body>
+  <div>
+    <div>
+      Provider is not ready
+    </div>
+  </div>
+</body>
+`;
+
+exports[`web3-config-provider > useNFT with custom getNFTMetadata 1`] = `
+<body>
+  <div>
+    <div
+      aria-busy="false"
+      aria-live="polite"
+      class="ant-spin css-dev-only-do-not-override-161f05s"
+    >
+      <span
+        class="ant-spin-dot-holder"
+      >
+        <span
+          class="ant-spin-dot ant-spin-dot-spin"
+        >
+          <i
+            class="ant-spin-dot-item"
+          />
+          <i
+            class="ant-spin-dot-item"
+          />
+          <i
+            class="ant-spin-dot-item"
+          />
+          <i
+            class="ant-spin-dot-item"
+          />
+        </span>
+      </span>
+    </div>
+  </div>
+</body>
+`;

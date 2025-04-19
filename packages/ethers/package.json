@@ -1,0 +1,91 @@
+{
+  "name": "@ant-design/web3-ethers",
+  "version": "1.1.18",
+  "type": "module",
+  "main": "dist/esm/index.js",
+  "module": "dist/esm/index.js",
+  "typings": "dist/esm/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/esm/index.js",
+      "require": "./dist/lib/index.js",
+      "types": "./dist/esm/index.d.ts"
+    },
+    "./provider": {
+      "import": "./dist/esm/ethers-provider/index.js",
+      "require": "./dist/lib/ethers-provider/index.js",
+      "types": "./dist/esm/ethers-provider/index.d.ts"
+    },
+    "./wallets": {
+      "import": "./dist/esm/wallets/index.js",
+      "require": "./dist/lib/wallets/index.js",
+      "types": "./dist/esm/wallets/index.d.ts"
+    },
+    "./wagmi": {
+      "import": "./dist/esm/wagmi.js",
+      "require": "./dist/lib/wagmi.js",
+      "types": "./dist/esm/wagmi.d.ts"
+    }
+  },
+  "sideEffects": false,
+  "files": [
+    "dist",
+    "CHANGELOG.md",
+    "README.md"
+  ],
+  "keywords": [
+    "ant",
+    "design",
+    "web3",
+    "antd",
+    "component",
+    "components",
+    "framework",
+    "frontend",
+    "react",
+    "react-component",
+    "ui",
+    "ethers",
+    "ethersjs"
+  ],
+  "homepage": "https://web3.ant.design",
+  "bugs": {
+    "url": "https://github.com/ant-design/ant-design-web3/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ant-design/ant-design-web3"
+  },
+  "scripts": {
+    "dev": "father dev",
+    "build": "father build"
+  },
+  "dependencies": {
+    "@ant-design/web3-assets": "workspace:*",
+    "@ant-design/web3-common": "workspace:*",
+    "@ant-design/web3-wagmi": "workspace:*",
+    "@tanstack/react-query": "^5.51.11",
+    "debug": "^4.4.0",
+    "viem": "^2.21.3",
+    "wagmi": "^2.14.16"
+  },
+  "devDependencies": {
+    "@types/debug": "^4.1.12",
+    "ethers": "^6.11.1",
+    "father": "^4.4.4",
+    "typescript": "^5.6.2"
+  },
+  "peerDependencies": {
+    "ethers": "^6.11.1"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org",
+    "access": "public"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "Firefox ESR",
+    "> 1%",
+    "ie >= 11"
+  ]
+}

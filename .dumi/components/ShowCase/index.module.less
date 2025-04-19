@@ -1,0 +1,124 @@
+.container {
+  overflow: hidden;
+  padding: 67px 0;
+  position: relative;
+  .headTitle {
+    font-size: 38px;
+    margin: 0 0 24px 0;
+    text-align: center;
+    font-weight: 700;
+    color: var(--theme-text-color);
+  }
+
+  .desc {
+    text-align: center;
+    color: var(--theme-text-color);
+  }
+
+  .componentList {
+    justify-content: center;
+    margin-top: 67px;
+    &.pc {
+      display: flex;
+      @media only screen and (max-width: 1920px) {
+        transform: scale(0.8);
+        transform-origin: center top;
+      }
+
+      @media only screen and (max-width: 1580px) {
+        transform: scale(0.7);
+        transform-origin: center top;
+      }
+    }
+    &.mobile {
+      display: none;
+    }
+    .cardBg {
+      position: relative;
+      background: var(--theme-item-bg);
+      border-radius: 16px;
+      padding: 40px 36px;
+      margin: 0 10px;
+      .title {
+        display: block;
+        font-size: 16px;
+        margin: 0 0 42px 0;
+        font-weight: 600;
+        color: var(--theme-text-color);
+      }
+    }
+
+    .NTFCard {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    .headTitle {
+      font-size: 24px;
+    }
+    .desc {
+      font-size: 12px;
+    }
+    .componentList {
+      &.pc {
+        display: none;
+      }
+      &.mobile {
+        display: block;
+      }
+      width: 100%;
+      .carouselDot {
+        text-align: center;
+        top: -20px;
+        button {
+          width: 6px;
+          height: 6px;
+          border-radius: 6px;
+          background: #1677ff !important;
+        }
+        .slick-active,
+        li {
+          width: 6px;
+          height: 6px;
+        }
+      }
+      .cardBg {
+        width: 95%;
+        box-sizing: border-box;
+        margin-bottom: 32px;
+      }
+      .connectModalCardBg {
+        min-height: 356px;
+      }
+    }
+    .footer {
+      margin-top: 33px;
+    }
+  }
+}
+
+[data-prefers-color='dark'] {
+  .container {
+    background-color: #050709;
+    .componentList {
+      .connectContainer {
+        background-color: #050709;
+      }
+      .cardBg {
+        background: #222;
+        background-image: radial-gradient(
+          circle at 94% 97%,
+          #000 0%,
+          rgba(233, 240, 255, 0) 53%
+        ) !important;
+        .title {
+          color: rgba(255, 255, 255, 0.85);
+        }
+      }
+    }
+  }
+}

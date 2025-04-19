@@ -1,0 +1,26 @@
+{
+  "app.docs.components.icon.search.placeholder": "Search icons here, click icon to copy code",
+  "app.docs.components.icon.colorful": "Colorful",
+  "app.docs.components.icon.all": "All",
+  "app.docs.components.icon.circle-colorful": "Circle Colorful",
+  "app.docs.components.icon.filled": "Filled",
+  "app.docs.components.icon.circle-filled": "Circle Filled",
+  "app.docs.components.icon.category.common": "Common Icons",
+  "app.docs.components.icon.category.other": "Other Icons",
+
+  "app.docs.site.index.banner.slogan": "Efficient react components for building dapps easier",
+  "app.docs.site.index.banner.button-text": "Start",
+
+  "app.docs.site.features.0.title": "Out-of-the-Box Experience",
+  "app.docs.site.features.0.description": "You can quickly set up their projects and leverage the pre-built components to create your DApps.",
+  "app.docs.site.features.1.title": "Flexible Theme Customization",
+  "app.docs.site.features.1.description": "Provides powerful theme customization capabilities based on the Ant Design system.",
+  "app.docs.site.features.2.title": "Compatibility with Different Chains",
+  "app.docs.site.features.2.description": "Ant Design Web3 is designed with good extensibility, allowing you to adapt to different chains through adapters.",
+
+  "app.docs.site.theme.title": "Customize the theme as you like",
+  "app.docs.site.theme.description": "Open more style algorithms to make it easier to customize your theme",
+
+  "app.docs.site.case.title": "Rich components, easy to choose",
+  "app.docs.site.case.description": "A large number of practical components to meet your needs, flexible customization and expansion"
+}

@@ -1,0 +1,81 @@
+#root {
+  .dumi-default-header-left {
+    width: 300px;
+  }
+
+  .dumi-default-header-right {
+    justify-content: end;
+  }
+
+  .dumi-default-navbar {
+    margin-right: 24px;
+  }
+
+  .dumi-default-hero-title {
+    font-size: 80px;
+  }
+
+  .dumi-default-content-footer {
+    line-height: 1.2;
+  }
+
+  .markdown .dumi-default-table .dumi-default-table-content table td:first-of-type {
+    color: #333;
+  }
+
+  .dumi-default-search-bar > input {
+    height: 35px;
+  }
+
+  .home {
+    main {
+      max-width: none;
+      padding: 0;
+    }
+
+    .dumi-default-header-content {
+      max-width: none;
+    }
+  }
+
+  .markdown > h1,
+  .markdown > h2,
+  .markdown > h3,
+  .markdown > h4,
+  .markdown > h5,
+  .markdown > h6 {
+    &[id] {
+      scroll-margin-top: 80px;
+    }
+  }
+}
+
+:not([data-prefers-color='dark']) {
+  .home {
+    .dumi-default-header {
+      background-color: #fff;
+    }
+
+    .dumi-default-content {
+      background-color: #fff;
+    }
+  }
+}
+
+[data-prefers-color='dark'] {
+  .home {
+    .dumi-default-content {
+      background-color: #050709;
+    }
+  }
+
+  .markdown .dumi-default-table .dumi-default-table-content table td:first-of-type {
+    color: #ddd !important;
+  }
+}
+
+html,
+.main-menu-inner {
+  scrollbar-width: thin;
+  scrollbar-color: unset;
+}
